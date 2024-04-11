@@ -86,13 +86,13 @@ export default async function Page() {
             return (
               <li key={post.id} className={styles.post}>
                 <h3 className={styles.postTitle}>
-                  <Link href={`/article/${slug}`}>
+                  <Link href={`/works/${slug}`}>
                     <Text title={post.properties?.Title?.title} />
                   </Link>
                 </h3>
 
                 <p className={styles.postDescription}>{date}</p>
-                <Link href={`/article/${slug}`}>Read post →</Link>
+                <Link href={`/works/${slug}`}>Read post →</Link>
               </li>
             );
           })}
